@@ -1,0 +1,93 @@
+{
+  "teacherChecklistPromptLibrary": {
+    "quadrant": "Technical Skills & Competence",
+    "description": "Standard teacher checklist prompts for assessing technical development across all instruments and faculties",
+    "promptAreas": [
+      {
+        "area": "Posture & Set-up",
+        "prompt": "Maintains balanced posture with relaxed shoulders",
+        "notes": "Applies across all faculties",
+        "applicable": ["Violin", "Flute", "Piano", "Trumpet", "Voice", "All instruments"]
+      },
+      {
+        "area": "Sound/Tone",
+        "prompt": "Produces a consistent, centred tone at current level",
+        "notes": "Young = short phrases; advanced = sustained control",
+        "applicable": ["Violin", "Flute", "Trumpet", "Voice", "All wind/string/vocal instruments"]
+      },
+      {
+        "area": "Accuracy",
+        "prompt": "Plays with reliable pitch/rhythm accuracy at current tempo",
+        "notes": "Use metronome targets",
+        "applicable": ["All instruments"]
+      },
+      {
+        "area": "Coordination",
+        "prompt": "Hands/breath/bow coordination is efficient and relaxed",
+        "notes": "Watch for tension",
+        "applicable": ["Piano", "Violin", "Flute", "Trumpet", "All instruments requiring coordination"]
+      },
+      {
+        "area": "Rhythmic Security",
+        "prompt": "Counts accurately through rests and changes",
+        "notes": "Include clapping/counting strategies",
+        "applicable": ["All instruments"]
+      },
+      {
+        "area": "Technique Transfer",
+        "prompt": "Applies technical focus successfully inside repertoire",
+        "notes": "Not only in exercises",
+        "applicable": ["All instruments"]
+      }
+    ],
+    "instrumentSpecificChecklist": {
+      "Violin": [
+        "Posture ✔/✖",
+        "Bow hold ✔/✖",
+        "Intonation ✔/✖",
+        "Rhythm ✔/✖",
+        "Vibrato ✔/✖",
+        "Shifting ✔/✖"
+      ],
+      "Flute": [
+        "Tone ✔/✖",
+        "Breath ✔/✖",
+        "Finger clarity ✔/✖",
+        "Rhythm ✔/✖",
+        "Articulation ✔/✖",
+        "Dynamics ✔/✖"
+      ],
+      "Piano": [
+        "Posture ✔/✖",
+        "Balance (LH/RH) ✔/✖",
+        "Articulation ✔/✖",
+        "Accuracy ✔/✖",
+        "Pedaling ✔/✖",
+        "Voicing ✔/✖"
+      ],
+      "Trumpet": [
+        "Breath ✔/✖",
+        "Range ✔/✖",
+        "Articulation ✔/✖",
+        "Endurance ✔/✖",
+        "Intonation ✔/✖",
+        "Dynamics ✔/✖"
+      ],
+      "Voice": [
+        "Breath ✔/✖",
+        "Tone ✔/✖",
+        "Diction ✔/✖",
+        "Projection ✔/✖",
+        "Pitch accuracy ✔/✖",
+        "Interpretation ✔/✖"
+      ]
+    },
+    "usageGuidelines": {
+      "frequency": "Each term (3 times per year)",
+      "format": "Tick (✔) for achieved, Cross (✖) for not yet achieved, or Partial tick for in progress",
+      "owner": "Teacher (T)",
+      "integration": "Results feed into Technical Skills & Competence quadrant score calculation",
+      "aiCoaching": "Checklist results can be used by AI coach to provide targeted practice recommendations"
+    }
+  }
+}

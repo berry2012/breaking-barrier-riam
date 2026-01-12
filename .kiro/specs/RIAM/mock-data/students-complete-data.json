@@ -1,0 +1,407 @@
+{
+  "students": [
+    {
+      "studentId": "S01",
+      "profile": {
+        "name": {
+          "first": "Aoife",
+          "last": "Byrne"
+        },
+        "email": "aoife.byrne@riam.student.ie",
+        "age": 10,
+        "stage": "Development",
+        "programme": "Junior RIAM (Years 1-2)",
+        "instrument": "Violin",
+        "faculty": "Strings",
+        "teacher": "Ms. Niamh O'Donnell",
+        "enrollmentDate": "2024-09-01",
+        "piecesInProgress": [
+          "Twinkle Twinkle Variations A",
+          "Lightly Row",
+          "Suzuki Etude 1"
+        ]
+      },
+      "technicalSkillsCompetence": {
+        "score": 58,
+        "practicalTechniqueMark": 58,
+        "teacherTechnicalAdvice": [
+          "Balance violin on shoulder",
+          "Relax right-hand thumb",
+          "Slow open strings with full bow"
+        ],
+        "teacherChecklist": {
+          "achieved": ["Posture", "Rhythm"],
+          "partial": ["Bow hold", "Intonation"]
+        }
+      },
+      "compositionalMusicianshipKnowledge": {
+        "score": 55,
+        "musicianshipMark": 55,
+        "auralEvidenceRecordings": [
+          "s3://accordo-recordings/S01/aural/claps-4beat-rhythms.mp3",
+          "s3://accordo-recordings/S01/aural/sings-3note-patterns.mp3"
+        ],
+        "creativeReflectiveNotes": [
+          "Student: 'Rhythms feel tricky — singing first helps.'"
+        ]
+      },
+      "repertoireCulturalKnowledge": {
+        "score": 60,
+        "repertoireCulturalMark": 60,
+        "listeningLogs": [
+          {
+            "piece": "Twinkle variations",
+            "composer": "Various",
+            "date": "2025-01-05",
+            "notes": "Simple folk songs"
+          }
+        ],
+        "contextMeaningNotes": [
+          "Student can name the tune and notices it appears in different countries."
+        ]
+      },
+      "performingArtistry": {
+        "score": 62,
+        "practicalArtistryMark": 62,
+        "studentPerformanceReflections": [
+          {
+            "date": "2024-12-15",
+            "performance": "Class performance",
+            "reflection": "I was nervous, but proud when I played for the class."
+          }
+        ],
+        "teacherPerformancePrepNotes": [
+          "Set a 'starting routine': breathe, check feet, quiet bow placement before first note."
+        ]
+      }
+    },
+    {
+      "studentId": "S02",
+      "profile": {
+        "name": {
+          "first": "Conor",
+          "last": "Walsh"
+        },
+        "email": "conor.walsh@riam.student.ie",
+        "age": 12,
+        "stage": "Intermediate",
+        "programme": "Junior RIAM (Years 3-4)",
+        "instrument": "Flute",
+        "faculty": "Woodwind",
+        "teacher": "Mr. Liam Keane",
+        "enrollmentDate": "2023-09-01",
+        "piecesInProgress": [
+          "Bach Minuet",
+          "Sonatina movement",
+          "Study No.3"
+        ]
+      },
+      "technicalSkillsCompetence": {
+        "score": 70,
+        "practicalTechniqueMark": 70,
+        "teacherTechnicalAdvice": [
+          "Long tones for steady tone",
+          "Count rests carefully",
+          "Scales slow → medium with metronome"
+        ],
+        "teacherChecklist": {
+          "achieved": ["Tone", "Breath", "Rhythm"],
+          "partial": ["Finger clarity"]
+        }
+      },
+      "compositionalMusicianshipKnowledge": {
+        "score": 72,
+        "musicianshipMark": 72,
+        "auralEvidenceRecordings": [
+          "s3://accordo-recordings/S02/aural/sings-5note-patterns.mp3",
+          "s3://accordo-recordings/S02/aural/claps-dotted-rhythms.mp3",
+          "s3://accordo-recordings/S02/aural/plays-intervals-flute.mp3"
+        ],
+        "creativeReflectiveNotes": [
+          "Teacher: 'Great listener — needs confidence to improvise small answers.'"
+        ]
+      },
+      "repertoireCulturalKnowledge": {
+        "score": 74,
+        "repertoireCulturalMark": 74,
+        "listeningLogs": [
+          {
+            "piece": "Bach flute sonatas",
+            "composer": "J.S. Bach",
+            "date": "2025-01-08",
+            "notes": "Baroque dance music"
+          }
+        ],
+        "contextMeaningNotes": [
+          "Student notes 'dance' feel and lighter articulation in Baroque style."
+        ]
+      },
+      "performingArtistry": {
+        "score": 68,
+        "practicalArtistryMark": 68,
+        "studentPerformanceReflections": [
+          {
+            "date": "2024-12-20",
+            "performance": "Winter recital",
+            "reflection": "I improved, but I rushed the fast section."
+          }
+        ],
+        "teacherPerformancePrepNotes": [
+          "Run 'performance reps': play opening 3 times in a row with calm posture and clear first breath."
+        ]
+      }
+    },
+    {
+      "studentId": "S03",
+      "profile": {
+        "name": {
+          "first": "Ella",
+          "last": "Murphy"
+        },
+        "email": "ella.murphy@riam.student.ie",
+        "age": 14,
+        "stage": "Advanced",
+        "programme": "Junior RIAM (Years 5-6)",
+        "instrument": "Piano",
+        "faculty": "Keyboard",
+        "teacher": "Ms. Siobhán Kelly",
+        "enrollmentDate": "2021-09-01",
+        "piecesInProgress": [
+          "Beethoven Sonatina (1st mvt)",
+          "Burgmüller Arabesque",
+          "Scale study"
+        ]
+      },
+      "technicalSkillsCompetence": {
+        "score": 82,
+        "practicalTechniqueMark": 82,
+        "teacherTechnicalAdvice": [
+          "Shape phrases (breathing points)",
+          "Keep LH lighter",
+          "Hands-separate for tricky bars"
+        ],
+        "teacherChecklist": {
+          "achieved": ["Posture", "Balance", "Articulation", "Accuracy"],
+          "partial": []
+        }
+      },
+      "compositionalMusicianshipKnowledge": {
+        "score": 80,
+        "musicianshipMark": 80,
+        "auralEvidenceRecordings": [
+          "s3://accordo-recordings/S03/aural/melodic-dictation.mp3",
+          "s3://accordo-recordings/S03/aural/claps-syncopation.mp3",
+          "s3://accordo-recordings/S03/aural/identifies-cadences.mp3"
+        ],
+        "creativeReflectiveNotes": [
+          "Student: 'I like spotting how harmony supports the melody.'"
+        ]
+      },
+      "repertoireCulturalKnowledge": {
+        "score": 85,
+        "repertoireCulturalMark": 85,
+        "listeningLogs": [
+          {
+            "piece": "Beethoven piano works",
+            "composer": "Ludwig van Beethoven",
+            "date": "2025-01-03",
+            "notes": "Classical clarity vs Romantic colour"
+          },
+          {
+            "piece": "Romantic character pieces",
+            "composer": "Various",
+            "date": "2025-01-10",
+            "notes": "Exploring expressive possibilities"
+          }
+        ],
+        "contextMeaningNotes": [
+          "Student can describe Classical clarity vs Romantic colour."
+        ]
+      },
+      "performingArtistry": {
+        "score": 78,
+        "practicalArtistryMark": 78,
+        "studentPerformanceReflections": [
+          {
+            "date": "2024-12-18",
+            "performance": "Solo recital",
+            "reflection": "I felt in control — I want more expression in slower sections."
+          }
+        ],
+        "teacherPerformancePrepNotes": [
+          "Agree 2 'story moments' per piece and plan dynamics/rubato around them."
+        ]
+      }
+    },
+    {
+      "studentId": "S04",
+      "profile": {
+        "name": {
+          "first": "Rory",
+          "last": "Fitzpatrick"
+        },
+        "email": "rory.fitzpatrick@riam.student.ie",
+        "age": 15,
+        "stage": "Advanced",
+        "programme": "Young Artist Programme",
+        "instrument": "Trumpet",
+        "faculty": "Brass",
+        "teacher": "Mr. David Horan",
+        "enrollmentDate": "2022-09-01",
+        "piecesInProgress": [
+          "Haydn Concerto (selected mvts)",
+          "Arban Characteristic Study",
+          "Orchestral excerpt"
+        ]
+      },
+      "technicalSkillsCompetence": {
+        "score": 92,
+        "practicalTechniqueMark": 92,
+        "teacherTechnicalAdvice": [
+          "Airflow focus in upper register",
+          "Light articulation",
+          "Daily long-tone warm‑ups + lip slurs"
+        ],
+        "teacherChecklist": {
+          "achieved": ["Breath", "Range", "Articulation", "Endurance"],
+          "partial": []
+        }
+      },
+      "compositionalMusicianshipKnowledge": {
+        "score": 78,
+        "musicianshipMark": 78,
+        "auralEvidenceRecordings": [
+          "s3://accordo-recordings/S04/aural/interval-singing.mp3",
+          "s3://accordo-recordings/S04/aural/rhythmic-dictation.mp3",
+          "s3://accordo-recordings/S04/aural/modulation-playback-trumpet.mp3"
+        ],
+        "creativeReflectiveNotes": [
+          "Teacher: 'Technically superb — let's explore composing 8‑bar motifs to deepen musical intent.'"
+        ]
+      },
+      "repertoireCulturalKnowledge": {
+        "score": 76,
+        "repertoireCulturalMark": 76,
+        "listeningLogs": [
+          {
+            "piece": "Haydn concertos",
+            "composer": "Joseph Haydn",
+            "date": "2024-12-28",
+            "notes": "Classical orchestral repertoire"
+          }
+        ],
+        "contextMeaningNotes": [
+          "Student identifies concerto form sections and style expectations (clarity, balance)."
+        ]
+      },
+      "performingArtistry": {
+        "score": 80,
+        "practicalArtistryMark": 80,
+        "studentPerformanceReflections": [
+          {
+            "date": "2024-12-22",
+            "performance": "Concerto competition",
+            "reflection": "I'm confident technically — I want more emotional range."
+          }
+        ],
+        "teacherPerformancePrepNotes": [
+          "Choose 3 phrase 'destinations' and practise shaping towards them (not just precision)."
+        ]
+      }
+    },
+    {
+      "studentId": "S05",
+      "profile": {
+        "name": {
+          "first": "Saoirse",
+          "last": "Nolan"
+        },
+        "email": "saoirse.nolan@riam.student.ie",
+        "age": 17,
+        "stage": "Advanced",
+        "programme": "Young Artist Programme",
+        "instrument": "Voice",
+        "faculty": "Vocal Studies",
+        "teacher": "Ms. Aisling Byrne",
+        "enrollmentDate": "2020-09-01",
+        "piecesInProgress": [
+          "Italian art song",
+          "Musical theatre ballad",
+          "Irish traditional air"
+        ]
+      },
+      "technicalSkillsCompetence": {
+        "score": 85,
+        "practicalTechniqueMark": 85,
+        "teacherTechnicalAdvice": [
+          "Breath support for long phrases",
+          "Clear vowels + diction",
+          "Practise soft, clean entries"
+        ],
+        "teacherChecklist": {
+          "achieved": ["Breath", "Tone", "Diction", "Projection"],
+          "partial": []
+        }
+      },
+      "compositionalMusicianshipKnowledge": {
+        "score": 90,
+        "musicianshipMark": 90,
+        "auralEvidenceRecordings": [
+          "s3://accordo-recordings/S05/aural/complex-melodies-back.mp3",
+          "s3://accordo-recordings/S05/aural/tonal-memory.mp3",
+          "s3://accordo-recordings/S05/aural/compound-rhythms.mp3"
+        ],
+        "creativeReflectiveNotes": [
+          "Student: 'Lyrics change everything — I journal the character's intention.'"
+        ]
+      },
+      "repertoireCulturalKnowledge": {
+        "score": 92,
+        "repertoireCulturalMark": 92,
+        "listeningLogs": [
+          {
+            "piece": "Schubert Lieder",
+            "composer": "Franz Schubert",
+            "date": "2025-01-02",
+            "notes": "German art song tradition"
+          },
+          {
+            "piece": "Irish folk singers",
+            "composer": "Traditional",
+            "date": "2025-01-09",
+            "notes": "Irish sean-nós style"
+          }
+        ],
+        "contextMeaningNotes": [
+          "Student connects text, tradition, and storytelling to musical choices."
+        ]
+      },
+      "performingArtistry": {
+        "score": 94,
+        "practicalArtistryMark": 94,
+        "studentPerformanceReflections": [
+          {
+            "date": "2024-12-20",
+            "performance": "Christmas concert",
+            "reflection": "I felt connected to the story and the audience."
+          }
+        ],
+        "teacherPerformancePrepNotes": [
+          "Write 2–3 'key words' per phrase and rehearse intention first, then sound."
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "generatedDate": "2026-01-11",
+    "dataSource": "RIAM Quadrant synthesised data.xlsx",
+    "totalStudents": 5,
+    "programmes": [
+      "Junior RIAM (Years 1-2)",
+      "Junior RIAM (Years 3-4)",
+      "Junior RIAM (Years 5-6)",
+      "Young Artist Programme"
+    ],
+    "instruments": ["Violin", "Flute", "Piano", "Trumpet", "Voice"]
+  }
+}

@@ -1,0 +1,6 @@
+studentId,studentName,age,stage,programme,instrumentFaculty,teacher,piecesInProgress,technicalScore,musicianshipScore,repertoireScore,performingArtistryScore
+S01,Aoife Byrne,10,Development,Junior RIAM (Years 1-2),Violin – Strings,Ms. Niamh O'Donnell,"Twinkle Twinkle Var. A; Lightly Row; Suzuki Etude 1",58,55,60,62
+S02,Conor Walsh,12,Intermediate,Junior RIAM (Years 3-4),Flute – Woodwind,Mr. Liam Keane,"Bach Minuet; Sonatina movement; Study No.3",70,72,74,68
+S03,Ella Murphy,14,Advanced,Junior RIAM (Years 5-6),Piano – Keyboard,Ms. Siobhán Kelly,"Beethoven Sonatina (1st mvt); Burgmüller Arabesque; Scale study",82,80,85,78
+S04,Rory Fitzpatrick,15,Advanced,Young Artist Programme,Trumpet – Brass,Mr. David Horan,"Haydn Concerto (selected mvts); Arban Characteristic Study; Orchestral excerpt",92,78,76,80
+S05,Saoirse Nolan,17,Advanced,Young Artist Programme,Voice – Vocal Studies,Ms. Aisling Byrne,"Italian art song; Musical theatre ballad; Irish traditional air",85,90,92,94

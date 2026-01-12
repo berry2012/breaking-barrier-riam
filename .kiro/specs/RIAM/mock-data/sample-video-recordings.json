@@ -1,0 +1,395 @@
+{
+  "videoRecordings": [
+    {
+      "recordingId": "S02-video-001",
+      "studentId": "S02",
+      "studentName": "Conor Walsh",
+      "instrument": "Flute",
+      "mediaType": "video",
+      "s3Key": "recordings/S02/video/bach-minuet-performance.mp4",
+      "s3Bucket": "accordo-recordings",
+      "fileName": "bach-minuet-performance.mp4",
+      "fileSize": 124857600,
+      "duration": 180,
+      "format": "mp4",
+      "videoMetadata": {
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.264",
+        "thumbnailS3Key": "recordings/S02/video/bach-minuet-performance-thumb.jpg"
+      },
+      "piece": "Bach Minuet in G Major",
+      "composer": "J.S. Bach",
+      "repertoireLevel": "Grade 3",
+      "performanceType": "Recital",
+      "uploadedAt": "2025-01-10T14:30:00Z",
+      "processedAt": "2025-01-10T14:35:28Z",
+      "status": "completed",
+      "aiFeedback": {
+        "technicalAssessment": {
+          "accuracy": 72,
+          "timing": 75,
+          "technique": 68,
+          "overallScore": 72,
+          "issues": [
+            {
+              "timestamp": 45,
+              "description": "Finger clarity slightly unclear in fast sixteenth-note passage",
+              "severity": "moderate"
+            },
+            {
+              "timestamp": 92,
+              "description": "Brief hesitation before high D",
+              "severity": "minor"
+            },
+            {
+              "timestamp": 135,
+              "description": "Intonation slightly flat on sustained E",
+              "severity": "minor"
+            }
+          ]
+        },
+        "expressiveAssessment": {
+          "musicality": 74,
+          "interpretation": 70,
+          "dynamics": 68,
+          "phrasing": 72,
+          "overallScore": 71,
+          "strengths": [
+            {
+              "timestamp": 20,
+              "description": "Beautiful clean tone in opening phrase"
+            },
+            {
+              "timestamp": 108,
+              "description": "Excellent breath control in long melodic line"
+            },
+            {
+              "timestamp": 155,
+              "description": "Good use of dynamic contrast in final section"
+            }
+          ]
+        },
+        "visualAssessment": {
+          "posture": 82,
+          "bodyMechanics": 75,
+          "stagePresence": 68,
+          "instrumentHandling": 80,
+          "overallScore": 76,
+          "observations": [
+            {
+              "timestamp": 15,
+              "category": "posture",
+              "description": "Excellent standing posture - balanced, shoulders relaxed, head aligned",
+              "severity": "excellent"
+            },
+            {
+              "timestamp": 48,
+              "category": "mechanics",
+              "description": "Right hand fingers slightly tense during fast passage - more relaxation needed",
+              "severity": "needs-attention"
+            },
+            {
+              "timestamp": 85,
+              "category": "presence",
+              "description": "Eye contact with audience is limited - could be more engaging",
+              "severity": "needs-attention"
+            },
+            {
+              "timestamp": 120,
+              "category": "handling",
+              "description": "Flute angle is consistent and proper throughout",
+              "severity": "excellent"
+            },
+            {
+              "timestamp": 165,
+              "category": "presence",
+              "description": "Confident bow at conclusion - good stage etiquette",
+              "severity": "good"
+            }
+          ]
+        },
+        "recommendations": [
+          "Practice finger exercises with metronome at slower tempo to build clarity",
+          "Work on relaxing right hand - shake out tension between phrases during practice",
+          "Practice performing for family/friends to build stage confidence and audience connection",
+          "Continue daily long tones for consistent tone production",
+          "Record yourself regularly to monitor progress on finger clarity"
+        ],
+        "nextSteps": [
+          "Focus on right-hand relaxation techniques this week",
+          "Practice making eye contact with audience (start with one friendly face)",
+          "Slow practice of measure 45-52 for finger clarity"
+        ],
+        "generatedAt": "2025-01-10T14:35:28Z"
+      }
+    },
+    {
+      "recordingId": "S03-video-001",
+      "studentId": "S03",
+      "studentName": "Ella Murphy",
+      "instrument": "Piano",
+      "mediaType": "video",
+      "s3Key": "recordings/S03/video/beethoven-sonatina-op49.mp4",
+      "s3Bucket": "accordo-recordings",
+      "fileName": "beethoven-sonatina-op49.mp4",
+      "fileSize": 256340992,
+      "duration": 240,
+      "format": "mp4",
+      "videoMetadata": {
+        "resolution": "1920x1080",
+        "fps": 60,
+        "codec": "H.264",
+        "thumbnailS3Key": "recordings/S03/video/beethoven-sonatina-op49-thumb.jpg"
+      },
+      "piece": "Beethoven Sonatina Op. 49 No. 1 (1st movement)",
+      "composer": "Ludwig van Beethoven",
+      "repertoireLevel": "Grade 5",
+      "performanceType": "Solo Recital",
+      "uploadedAt": "2025-01-08T16:45:00Z",
+      "processedAt": "2025-01-08T16:51:15Z",
+      "status": "completed",
+      "aiFeedback": {
+        "technicalAssessment": {
+          "accuracy": 85,
+          "timing": 88,
+          "technique": 82,
+          "overallScore": 85,
+          "issues": [
+            {
+              "timestamp": 65,
+              "description": "Left hand slightly louder than right in accompaniment passage",
+              "severity": "minor"
+            },
+            {
+              "timestamp": 142,
+              "description": "Brief hesitation before modulation",
+              "severity": "minor"
+            }
+          ]
+        },
+        "expressiveAssessment": {
+          "musicality": 80,
+          "interpretation": 78,
+          "dynamics": 76,
+          "phrasing": 82,
+          "overallScore": 79,
+          "strengths": [
+            {
+              "timestamp": 28,
+              "description": "Beautiful shaping of opening theme with clear breathing points"
+            },
+            {
+              "timestamp": 95,
+              "description": "Excellent control of gradual crescendo"
+            },
+            {
+              "timestamp": 180,
+              "description": "Sensitive handling of closing pianissimo"
+            },
+            {
+              "timestamp": 210,
+              "description": "Well-articulated staccato passages with musical intent"
+            }
+          ]
+        },
+        "visualAssessment": {
+          "posture": 88,
+          "bodyMechanics": 85,
+          "stagePresence": 75,
+          "instrumentHandling": 90,
+          "overallScore": 85,
+          "observations": [
+            {
+              "timestamp": 10,
+              "category": "posture",
+              "description": "Perfect bench height and sitting position - straight back, relaxed shoulders",
+              "severity": "excellent"
+            },
+            {
+              "timestamp": 42,
+              "category": "mechanics",
+              "description": "Excellent wrist alignment and finger curvature throughout",
+              "severity": "excellent"
+            },
+            {
+              "timestamp": 68,
+              "category": "mechanics",
+              "description": "Left hand could be lighter - visible tension in accompaniment",
+              "severity": "needs-attention"
+            },
+            {
+              "timestamp": 125,
+              "category": "presence",
+              "description": "Focused and engaged, but could show more emotional connection to audience",
+              "severity": "good"
+            },
+            {
+              "timestamp": 195,
+              "category": "mechanics",
+              "description": "Beautiful use of arm weight in fortissimo sections",
+              "severity": "excellent"
+            },
+            {
+              "timestamp": 230,
+              "category": "presence",
+              "description": "Confident finish with appropriate pause before bowing",
+              "severity": "excellent"
+            }
+          ]
+        },
+        "recommendations": [
+          "Practice LH (left hand) lighter touch in accompaniment passages - focus on balance between hands",
+          "Work on rubato and dynamic extremes to bring more emotional expression",
+          "Explore 'story moments' in the music - decide what each phrase is 'saying'",
+          "Continue excellent posture and hand position habits",
+          "Practice performing with more outward expression and audience connection"
+        ],
+        "nextSteps": [
+          "Hands-separate practice focusing on LH dynamics (softer touch)",
+          "Mark 2-3 'story moments' in the score and plan expression around them",
+          "Practice playing to specific emotional intentions (joy, longing, triumph)"
+        ],
+        "generatedAt": "2025-01-08T16:51:15Z"
+      }
+    },
+    {
+      "recordingId": "S05-video-001",
+      "studentId": "S05",
+      "studentName": "Saoirse Nolan",
+      "instrument": "Voice",
+      "mediaType": "video",
+      "s3Key": "recordings/S05/video/caro-mio-ben-performance.mp4",
+      "s3Bucket": "accordo-recordings",
+      "fileName": "caro-mio-ben-performance.mp4",
+      "fileSize": 189234176,
+      "duration": 195,
+      "format": "mp4",
+      "videoMetadata": {
+        "resolution": "1920x1080",
+        "fps": 30,
+        "codec": "H.264",
+        "thumbnailS3Key": "recordings/S05/video/caro-mio-ben-performance-thumb.jpg"
+      },
+      "piece": "Caro mio ben",
+      "composer": "Tommaso Giordani",
+      "repertoireLevel": "Advanced",
+      "performanceType": "Recital",
+      "uploadedAt": "2025-01-09T18:20:00Z",
+      "processedAt": "2025-01-09T18:24:42Z",
+      "status": "completed",
+      "aiFeedback": {
+        "technicalAssessment": {
+          "accuracy": 88,
+          "timing": 90,
+          "technique": 86,
+          "overallScore": 88,
+          "issues": [
+            {
+              "timestamp": 75,
+              "description": "Brief pitch wavering on sustained high A",
+              "severity": "minor"
+            }
+          ]
+        },
+        "expressiveAssessment": {
+          "musicality": 95,
+          "interpretation": 92,
+          "dynamics": 90,
+          "phrasing": 94,
+          "overallScore": 93,
+          "strengths": [
+            {
+              "timestamp": 15,
+              "description": "Stunning legato phrasing with seamless breath support"
+            },
+            {
+              "timestamp": 45,
+              "description": "Beautiful messa di voce (crescendo-decrescendo) on long note"
+            },
+            {
+              "timestamp": 98,
+              "description": "Exquisite pianissimo with perfect diction clarity"
+            },
+            {
+              "timestamp": 145,
+              "description": "Deeply expressive climax with excellent vocal color"
+            },
+            {
+              "timestamp": 180,
+              "description": "Heartfelt final phrase with sensitive dynamic control"
+            }
+          ]
+        },
+        "visualAssessment": {
+          "posture": 92,
+          "bodyMechanics": 90,
+          "stagePresence": 96,
+          "instrumentHandling": 94,
+          "overallScore": 93,
+          "observations": [
+            {
+              "timestamp": 8,
+              "category": "posture",
+              "description": "Perfect stance - grounded, open chest, relaxed shoulders, head aligned",
+              "severity": "excellent"
+            },
+            {
+              "timestamp": 32,
+              "category": "mechanics",
+              "description": "Visible breath support - excellent diaphragmatic engagement",
+              "severity": "excellent"
+            },
+            {
+              "timestamp": 58,
+              "category": "presence",
+              "description": "Deeply connected to the text - storytelling is evident in facial expression",
+              "severity": "excellent"
+            },
+            {
+              "timestamp": 88,
+              "category": "mechanics",
+              "description": "Jaw and throat relaxation excellent throughout",
+              "severity": "excellent"
+            },
+            {
+              "timestamp": 125,
+              "category": "presence",
+              "description": "Strong eye contact with audience - draws listener into the emotional narrative",
+              "severity": "excellent"
+            },
+            {
+              "timestamp": 165,
+              "category": "presence",
+              "description": "Uses subtle gestures effectively to enhance meaning without distraction",
+              "severity": "excellent"
+            }
+          ]
+        },
+        "recommendations": [
+          "Continue journaling character intentions - this deep text connection is a major strength",
+          "Explore even more dynamic range - you have the control for extremes",
+          "Consider working with a coach on sustained high notes to eliminate minor pitch wavering",
+          "Your stage presence is exceptional - maintain this authentic connection in all performances",
+          "Record and analyze your performances regularly to continue refining your craft"
+        ],
+        "nextSteps": [
+          "Practice sustained high notes with tuner for pitch stability",
+          "Continue writing 2-3 key words per phrase before singing",
+          "Explore more repertoire that showcases your storytelling strengths (Lieder, art song cycles)"
+        ],
+        "generatedAt": "2025-01-09T18:24:42Z"
+      }
+    }
+  ],
+  "metadata": {
+    "totalVideoRecordings": 3,
+    "instruments": ["Flute", "Piano", "Voice"],
+    "totalDuration": 615,
+    "averageFileSize": 190144256,
+    "averageAnalysisTime": "4.5 minutes",
+    "videoFormats": ["mp4"],
+    "resolutions": ["1920x1080"],
+    "generatedDate": "2026-01-11"
+  }
+}
