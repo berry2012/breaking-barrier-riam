@@ -1,0 +1,7 @@
+{
+  "name": "riam-chat-lambda",
+  "version": "1.0.0",
+  "dependencies": {
+    "@aws-sdk/client-bedrock-agent-runtime": "^3.709.0"
+  }
+}

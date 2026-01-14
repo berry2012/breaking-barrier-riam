@@ -1,0 +1,9 @@
+{
+  "websiteUrl": "http://riam-accordo-demo-871442305974.s3-website-us-east-1.amazonaws.com",
+  "apiEndpoint": "https://4lk3cpbeh0.execute-api.us-east-1.amazonaws.com/prod",
+  "s3Bucket": "riam-accordo-demo-871442305974",
+  "lambdaFunction": "riam-chat-handler",
+  "apiId": "4lk3cpbeh0",
+  "region": "us-east-1",
+  "deployedAt": "2026-01-14T11:03:17Z"
+}

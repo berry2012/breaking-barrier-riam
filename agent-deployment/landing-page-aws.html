@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIAM Accordo AI Coach</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-blue-600 text-white py-6 shadow-lg">
+            <div class="container mx-auto px-4">
+                <h1 class="text-3xl font-bold">🎵 RIAM Accordo AI Coach</h1>
+                <p class="text-blue-100 mt-2">Your personalized music education assistant</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-1 container mx-auto px-4 py-8 max-w-4xl">
+            <!-- Student Selector -->
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <label class="block text-sm font-medium text-gray-700 mb-2">Select Student</label>
+                <select id="studentSelect" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <option value="">Choose a student...</option>
+                    <option value="S01">Aoife Byrne (Violin, Age 10)</option>
+                    <option value="S02">Conor Walsh (Flute, Age 12)</option>
+                    <option value="S03">Ella Murphy (Piano, Age 14)</option>
+                    <option value="S04">Rory Fitzpatrick (Trumpet, Age 15)</option>
+                    <option value="S05">Saoirse Nolan (Voice, Age 17)</option>
+                </select>
+            </div>
+
+            <!-- Student Profile Card -->
+            <div id="profileCard" class="bg-white rounded-lg shadow-md p-6 mb-6 hidden">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Student Profile</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="text-center p-4 bg-blue-50 rounded-lg">
+                        <div class="text-2xl font-bold text-blue-600" id="techScore">--</div>
+                        <div class="text-xs text-gray-600 mt-1">Technical Skills</div>
+                    </div>
+                    <div class="text-center p-4 bg-purple-50 rounded-lg">
+                        <div class="text-2xl font-bold text-purple-600" id="musicScore">--</div>
+                        <div class="text-xs text-gray-600 mt-1">Musicianship</div>
+                    </div>
+                    <div class="text-center p-4 bg-yellow-50 rounded-lg">
+                        <div class="text-2xl font-bold text-yellow-600" id="repScore">--</div>
+                        <div class="text-xs text-gray-600 mt-1">Repertoire</div>
+                    </div>
+                    <div class="text-center p-4 bg-green-50 rounded-lg">
+                        <div class="text-2xl font-bold text-green-600" id="artScore">--</div>
+                        <div class="text-xs text-gray-600 mt-1">Artistry</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conversation Type Selector -->
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <label class="block text-sm font-medium text-gray-700 mb-3">Conversation Type</label>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <button onclick="setConversationType('goal-setting')" class="conv-type-btn p-3 border-2 border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition">
+                        🎯 Goal Setting
+                    </button>
+                    <button onclick="setConversationType('reflection')" class="conv-type-btn p-3 border-2 border-gray-300 rounded-lg hover:border-purple-500 hover:bg-purple-50 transition">
+                        💭 Reflection
+                    </button>
+                    <button onclick="setConversationType('progress')" class="conv-type-btn p-3 border-2 border-gray-300 rounded-lg hover:border-green-500 hover:bg-green-50 transition">
+                        📈 Progress
+                    </button>
+                    <button onclick="setConversationType('motivation')" class="conv-type-btn p-3 border-2 border-gray-300 rounded-lg hover:border-yellow-500 hover:bg-yellow-50 transition">
+                        ⭐ Motivation
+                    </button>
+                </div>
+            </div>
+
+            <!-- Chat Interface -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-gray-100 px-6 py-4 border-b">
+                    <h2 class="text-lg font-semibold text-gray-800">Chat with AI Coach</h2>
+                </div>
+                
+                <div id="chatMessages" class="h-96 overflow-y-auto p-6 space-y-4">
+                    <div class="text-center text-gray-500 py-8">
+                        Select a student and conversation type to start chatting
+                    </div>
+                </div>
+
+                <div class="border-t p-4">
+                    <div class="flex gap-2">
+                        <input 
+                            type="text" 
+                            id="messageInput" 
+                            placeholder="Type your message..." 
+                            class="flex-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            disabled
+                        />
+                        <button 
+                            id="sendBtn"
+                            onclick="sendMessage()" 
+                            class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition disabled:bg-gray-300 disabled:cursor-not-allowed"
+                            disabled
+                        >
+                            Send
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feedback Section -->
+            <div id="feedbackSection" class="mt-4 hidden">
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <p class="text-sm text-gray-600 mb-2">Was this response helpful?</p>
+                    <div class="flex gap-2">
+                        <button onclick="submitFeedback('positive')" class="px-4 py-2 bg-green-100 text-green-700 rounded-lg hover:bg-green-200 transition">
+                            👍 Yes
+                        </button>
+                        <button onclick="submitFeedback('negative')" class="px-4 py-2 bg-red-100 text-red-700 rounded-lg hover:bg-red-200 transition">
+                            👎 No
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-4 mt-8">
+            <div class="container mx-auto px-4 text-center text-sm">
+                <p>RIAM Accordo AI - AWS Breaking Barriers Challenge 2026</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Mock student data
+        const studentData = {
+            "S01": {
+                name: "Aoife Byrne",
+                instrument: "Violin",
+                age: 10,
+                scores: { tech: 58, music: 55, rep: 60, art: 62 },
+                context: "Development stage, working on Twinkle variations and basic bow technique"
+            },
+            "S02": {
+                name: "Conor Walsh",
+                instrument: "Flute",
+                age: 12,
+                scores: { tech: 70, music: 72, rep: 74, art: 68 },
+                context: "Intermediate stage, studying Bach Minuet and improving breath control"
+            },
+            "S03": {
+                name: "Ella Murphy",
+                instrument: "Piano",
+                age: 14,
+                scores: { tech: 82, music: 80, rep: 85, art: 78 },
+                context: "Advanced stage, preparing Chopin Nocturne and working on pedaling technique"
+            },
+            "S04": {
+                name: "Rory Fitzpatrick",
+                instrument: "Trumpet",
+                age: 15,
+                scores: { tech: 92, music: 78, rep: 76, art: 80 },
+                context: "Young Artist stage, strong technical skills but needs musicianship development"
+            },
+            "S05": {
+                name: "Saoirse Nolan",
+                instrument: "Voice",
+                age: 17,
+                scores: { tech: 85, music: 90, rep: 92, art: 94 },
+                context: "Young Artist stage, preparing for conservatory auditions with art song repertoire"
+            }
+        };
+
+        let currentStudent = null;
+        let conversationType = null;
+        let sessionId = null;
+        let lastMessageId = null;
+
+        // Student selection handler
+        document.getElementById('studentSelect').addEventListener('change', function(e) {
+            const studentId = e.target.value;
+            if (studentId) {
+                currentStudent = studentId;
+                const student = studentData[studentId];
+                
+                // Show profile card
+                document.getElementById('profileCard').classList.remove('hidden');
+                document.getElementById('techScore').textContent = student.scores.tech;
+                document.getElementById('musicScore').textContent = student.scores.music;
+                document.getElementById('repScore').textContent = student.scores.rep;
+                document.getElementById('artScore').textContent = student.scores.art;
+                
+                checkReadyToChat();
+            }
+        });
+
+        function setConversationType(type) {
+            conversationType = type;
+            
+            // Update button styles
+            document.querySelectorAll('.conv-type-btn').forEach(btn => {
+                btn.classList.remove('border-blue-500', 'bg-blue-50', 'border-purple-500', 'bg-purple-50', 
+                                     'border-green-500', 'bg-green-50', 'border-yellow-500', 'bg-yellow-50');
+            });
+            event.target.classList.add('border-blue-500', 'bg-blue-50');
+            
+            checkReadyToChat();
+            
+            // Start new session
+            if (currentStudent) {
+                sessionId = 'session-' + Date.now();
+                startConversation();
+            }
+        }
+
+        function checkReadyToChat() {
+            const ready = currentStudent && conversationType;
+            document.getElementById('messageInput').disabled = !ready;
+            document.getElementById('sendBtn').disabled = !ready;
+        }
+
+        function startConversation() {
+            const student = studentData[currentStudent];
+            document.getElementById('chatMessages').innerHTML = '';
+            addMessage('assistant', `Hi ${student.name}! I'm your AI music coach. How can I help you today with your ${student.instrument} practice?`);
+        }
+
+        function addMessage(role, content) {
+            const messagesDiv = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = role === 'user' ? 'flex justify-end' : 'flex justify-start';
+            
+            messageDiv.innerHTML = `
+                <div class="${role === 'user' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-800'} rounded-lg px-4 py-3 max-w-md">
+                    ${content}
+                </div>
+            `;
+            
+            messagesDiv.appendChild(messageDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+            
+            // Show feedback section after AI response
+            if (role === 'assistant') {
+                document.getElementById('feedbackSection').classList.remove('hidden');
+            }
+        }
+
+        async function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const message = input.value.trim();
+            
+            if (!message) return;
+            
+            // Add user message
+            addMessage('user', message);
+            input.value = '';
+            
+            // Show typing indicator
+            const typingDiv = document.createElement('div');
+            typingDiv.id = 'typing';
+            typingDiv.className = 'flex justify-start';
+            typingDiv.innerHTML = '<div class="bg-gray-200 rounded-lg px-4 py-3"><span class="animate-pulse">AI is thinking...</span></div>';
+            document.getElementById('chatMessages').appendChild(typingDiv);
+            
+            try {
+                const response = await fetch('https://4lk3cpbeh0.execute-api.us-east-1.amazonaws.com/prod/api/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        studentId: currentStudent,
+                        conversationType: conversationType,
+                        message: message,
+                        sessionId: sessionId
+                    })
+                });
+                
+                const data = await response.json();
+                document.getElementById('typing')?.remove();
+                addMessage('assistant', data.response);
+                lastMessageId = data.messageId;
+                
+            } catch (error) {
+                document.getElementById('typing')?.remove();
+                addMessage('assistant', 'Sorry, I encountered an error connecting to the AI. Please make sure the API server is running.');
+                console.error('Error:', error);
+            }
+        }
+
+        function generateMockResponse(userMessage) {
+            const student = studentData[currentStudent];
+            const responses = {
+                'goal-setting': `That's a great area to focus on! Based on your current ${student.instrument} level, I suggest setting a SMART goal: Practice ${userMessage.toLowerCase().includes('scale') ? 'scales' : 'your piece'} for 15 minutes daily for the next 2 weeks. Would you like help breaking this down into daily practice steps?`,
+                'reflection': `I appreciate you sharing that. It's normal to face challenges when learning ${student.instrument}. Your technical score of ${student.scores.tech}/100 shows you're making progress. What specific moment in your practice felt most rewarding this week?`,
+                'progress': `Looking at your scores, you're doing well! Your ${student.instrument} artistry (${student.scores.art}/100) is particularly strong. To build on this, let's focus on connecting your technical skills with your expressive abilities. What piece are you most excited about right now?`,
+                'motivation': `Remember, ${student.name}, every practice session builds your skills, even when it feels difficult. Your ${student.instrument} journey is unique, and you've already achieved a ${student.scores.tech}/100 in technical skills! What's one small thing you can celebrate from this week?`
+            };
+            
+            return responses[conversationType] || `That's an interesting point about your ${student.instrument} practice. Tell me more about what you're experiencing.`;
+        }
+
+        function submitFeedback(rating) {
+            console.log('Feedback submitted:', rating);
+            document.getElementById('feedbackSection').innerHTML = `
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <p class="text-sm text-green-600">✓ Thank you for your feedback!</p>
+                </div>
+            `;
+            setTimeout(() => {
+                document.getElementById('feedbackSection').classList.add('hidden');
+            }, 2000);
+        }
+
+        // Enable Enter key to send
+        document.getElementById('messageInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+</html>
